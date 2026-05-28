@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    color: black;
+    font-family: system-ui, sans-serif;
+}
+
+body.home {
+    background: #ffccee;
+}
+
+body.yellow-hearts {
+    background: #f5ed82;
+}
+
+body.blue-butterflies {
+    background: #90c0ff;
+}
+
+body.error {
+    background: #aaaaaa;
+}
+
+header {
+    padding: 30px 20px 0;
+    text-align: center;
+}
+
+nav {
+    font-size: 18px;
+}
+
+nav span {
+    opacity: 1;
+}
+
+a {
+    color: inherit;
+    opacity: .7;
+    text-decoration: none;
+    transition: opacity .2s ease;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+main,
+footer {
+    margin: auto;
+    text-align: center;
+}
+
+main {
+    padding: 40px 40px;
+    line-height: 1.5;
+}
+
+footer {
+    max-width: 700px;
+    padding: 0 40px;
+    line-height: 1;
+}
+
+/* normal text pages */
+
+.home main,
+.error main {
+    max-width: 700px;
+}
+
+/* yellow hearts */
+
+.yellow-hearts main {
+    max-width: 700px;
+    line-height: 1;
+}
+
+.entry {
+    max-width: 720px;
+    margin: auto;
+    padding: 20px 80px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.entry p,
+.hanging .poem-text p {
+    margin: 0 0 24px;
+    font-size: 18px;
+}
+
+.entry time,
+time {
+    display: block;
+    margin-top: 25px;
+    opacity: .7;
+}
+
+.entry time {
+    margin-top: 28px;
+}
+
+.entry:not(:last-child)::after {
+    content: "—";
+    display: block;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.hanging {
+    text-align: center;
+}
+
+.hanging .poem-text {
+    display: inline-block;
+    max-width: 520px;
+    text-align: left;
+}
+
+.hanging .poem-text p {
+    line-height: 1.5;
+}
+
+.entry p:last-child,
+.hanging .poem-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* blue butterflies */
+
+.blue-butterflies main {
+    max-width: 1200px;
+    padding: 80px 40px;
+    line-height: 1;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 56px;
+    column-gap: 40px;
+}
+
+.photo {
+    margin: 0;
+    text-align: center;
+}
+
+.photo img {
+    height: min(420px, 60vh);
+    width: auto;
+    max-width: 100%;
+    display: block;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    border: 6px solid white;
+}
+
+.photo figcaption {
+    margin-top: 16px;
+}
+
+.photo p {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.photo time {
+    display: block;
+    margin-top: 12px;
+    opacity: .7;
+}
+
+.photo a {
+    opacity: 1;
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+    main {
+        padding: 40px 16px;
+    }
+
+    footer {
+        padding: 0 16px;
+    }
+
+    .entry {
+        padding: 20px 0;
+    }
+
+    .hanging .poem-text {
+        max-width: 100%;
+    }
+
+    .photo img {
+        width: 100%;
+        height: auto;
+    }
+}

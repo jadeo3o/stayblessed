@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>blue butterflies - #stayblessed</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="icon"
+      type="image/png"
+      href="/assets/favicons/blue-butterflies.png">
+</head>
+
+<header>
+    <nav>
+        <a href="/">home</a>
+        <span>·</span>
+        <a href="/yellow-hearts">yellow hearts</a>
+        <span>·</span>
+        <span>blue butterflies</span>
+    </nav>
+</header>
+
+<body class="blue-butterflies">
+<main>
+<div class="photos">
+    <figure class="photo">
+        <img src="/assets/blue-butterflies/photos/260524_2010.jpg"
+             alt="a dark turning road with an orange street lamp"
+             loading="lazy">
+        <figcaption>
+            <p>dark downhill</p>
+            <time datetime="2026-05-24T20:10:00-04:00">
+                May 24 2026
+            </time>
+        </figcaption>
+    </figure>
+
+    <figure class="photo">
+        <img src="/assets/blue-butterflies/photos/260330_1926.jpg"
+             alt="pink and purple clouds at sunset"
+             loading="lazy">
+        <figcaption>
+            <p>cotton candy skies</p>
+            <time datetime="2026-03-30T19:26:00-04:00">
+                March 30 2026
+            </time>
+        </figcaption>
+    </figure>
+
+    <figure class="photo">
+        <img src="/assets/blue-butterflies/photos/260330_1830.jpg"
+             alt="new york city just before sunset across the hudson river"
+             loading="lazy">
+        <figcaption>
+            <p>so far away</p>
+            <time datetime="2026-03-30T18:30:00-04:00">
+                March 30 2026
+            </time>
+        </figcaption>
+    </figure>
+
+    <figure class="photo">
+        <img src="/assets/blue-butterflies/photos/260327_2349.jpg"
+             alt="the moon on a cloudy night surrounded by tree branches"
+             loading="lazy">
+        <figcaption>
+            <p>we look at the same moon</p>
+            <time datetime="2026-03-28T23:49:00-04:00">
+                March 28 2026
+            </time>
+        </figcaption>
+    </figure>
+
+    <figure class="photo">
+        <img src="/assets/blue-butterflies/photos/260327_2155.jpg"
+             alt="new york city skyline at night across the hudson river"
+             loading="lazy">
+        <figcaption>
+            <p>oh how i love the city</p>
+            <time datetime="2026-03-27T21:55:00-04:00">
+                March 27 2026
+            </time>
+        </figcaption>
+    </figure>
+</div>
+
+</main>
+
+<footer>
+<p>posts by jade (@fcjmms)</p>
+<p>submissions/contact: <a href="mailto:jade@stayblessed.cc">jade@stayblessed.cc</a></p>
+<p>#stayblessed <3</p>
+</footer>
+
+<script>
+document.querySelectorAll(".local-time")
+.forEach(time => {
+    const date = new Date(time.dateTime);
+    const month = date.toLocaleString("en-US", {
+        month: "long"
+    });
+    const day = String(date.getDate()).padStart(2, "0");
+    const year = date.getFullYear();
+    const clock = date.toLocaleString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true
+    });
+    time.textContent =
+        `${month} ${day} ${year} · ${clock}`;
+});
+</script>
+</body>
+
+</html>

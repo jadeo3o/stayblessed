@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>yellow hearts - #stayblessed</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="icon"
+      type="image/png"
+      href="/assets/favicons/yellow-hearts.png">
+</head>
+
+<header>
+    <nav>
+        <a href="/">home</a>
+        <span>·</span>
+        <span>yellow hearts</span>
+        <span>·</span>
+        <a href="/blue-butterflies/">blue butterflies</a>
+    </nav>
+</header>
+
+<body class="yellow-hearts">
+<main>
+
+<!--use <br> for line break, otherwise <p> for new paragraph-->
+
+<div class="entry hanging">
+    <div class="poem-text">
+        <p>some part of us will always be the same.<br>
+        i'm staring up at my ceiling<br>
+        wide awake in the middle of the night<br>
+        are you, too?</p>
+        
+        <p>our connection was always so strong<br>
+        is it still as strong as it used to be?<br>
+        do we still watch the same sunsets?</p>
+        
+        <p>or are you painting mine beautifully instead?</p>
+    </div>
+    <time class="local-time" datetime="2026-05-26T07:49:00Z">
+        May 26 2026 · 07:49 AM UTC
+    </time>
+</div>
+
+<div class="entry hanging">
+    <div class="poem-text">
+        <p>how can my heart be empty<br>
+        when it's full of disappointment?</p>
+        
+        <p>we're inseparable until we aren't<br>
+        and when it's over i crave more<br>
+        i want nothing more than to be with you<br>
+        all the time.</p>
+        
+        <p>i'm an addict and you're my drug</p>
+    </div>
+    <time class="local-time" datetime="2026-05-25T06:58:00Z">
+        May 25 2026 · 06:58 AM UTC
+    </time>
+</div>
+
+<div class="entry">
+    <p>if only my poems were as beautiful as you are.</p>
+    <time class="local-time" datetime="2026-05-09T04:03:00Z">
+        May 09 2026 · 04:03 UTC
+    </time>
+</div>
+
+<div class="entry">
+<p>things are about to change completely.</p>
+    <time class="local-time" datetime="2026-04-20T20:21:00Z">
+        April 20 2026 · 08:21 PM UTC
+    </time>
+</div>
+
+<div class="entry hanging">
+    <div class="poem-text">
+        <p>because i've always only wanted to be with you, but i can't.<br>
+        i write about you every day.<br>
+        in my journal, in my notes app, to my friends, in my tweets.<br>
+        i wonder if you know how often i think about you.</p>
+        
+        <p>do you know what i truly desire?</p>
+    </div>
+    <time class="local-time" datetime="2026-04-03T03:40:00Z">
+        April 03 2026 · 03:40 AM UTC
+    </time>
+</div>
+
+<div class="entry">
+<p>it's thundering and you aren't here to comfort me through the crashes. you always knew i was afraid of the thunder.</p>
+<p>where are you?</p>
+    <time class="local-time" datetime="2026-03-22T19:21:00Z">
+        March 22 2026 · 07:21 PM UTC
+    </time>
+</div>
+
+<div class="entry">
+    <p>some part of you lives on within what died after you left. i hold on so tightly to that little fragment of magic that you gave to me before everything changed.</p>
+    <time class="local-time" datetime="2026-03-22T07:28:00Z">
+        March 22 2026 · 07:28 AM UTC
+    </time>
+</div>
+
+<div class="entry">
+    <p>the sun has set and we got our fairy tale ending. but i still yearn for more with you.</p>
+    <p>i'm going to reach out to you. i hope you respond.</p>
+    <time class="local-time"
+          datetime="2026-03-17T04:21:00Z">
+        March 17 2026 · 04:21 AM UTC
+    </time>
+</div>
+
+<div class="entry">
+    <p>please listen when i say something's wrong, okay?</p>
+    <time class="local-time" datetime="2026-02-27T23:23:00Z">
+        February 27 2026 · 11:23 PM UTC
+    </time>
+</div>
+
+<div class="entry">
+    <p>i'm weak.</p>
+    <time class="local-time" datetime="2026-02-23T01:54:00Z">
+        February 23 2026 · 01:54 AM UTC
+    </time>
+</div>
+
+<div class="entry">
+    <p>oh no. oh no. oh no. oh no.</p>
+    <p>oh no.</p>
+    <time class="local-time" datetime="2026-02-22T03:08:00Z">
+        February 22 2026 · 03:08 AM UTC
+    </time>
+</div>
+
+<div class="entry">
+    <p>i'm not sure i have the right to love you.</p>
+    <time class="local-time" datetime="2026-02-22T01:58:00Z">
+        February 22 2026 · 01:58 AM UTC
+    </time>
+</div>
+
+<div class="entry">
+    <p>my life is defined not by the things happening around me, but by things that no longer exist. my feelings are dictated by things that once flourished but have long withered away.</p>
+    <time class="local-time" datetime="2026-02-08T23:19:00Z">
+        February 08 2026 · 11:19 PM UTC
+    </time>
+</div>
+
+</main>
+
+<footer>
+<p>posts by jade (@fcjmms)</p>
+<p>submissions/contact: <a href="mailto:jade@stayblessed.cc">jade@stayblessed.cc</a></p>
+<p>#stayblessed <3</p>
+</footer>
+
+<script>
+document.querySelectorAll(".local-time")
+.forEach(time => {
+    const date = new Date(time.dateTime);
+    const month = date.toLocaleString("en-US", {
+        month: "long"
+    });
+    const day = String(date.getDate()).padStart(2, "0");
+    const year = date.getFullYear();
+    const clock = date.toLocaleString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true
+    });
+    time.textContent =
+        `${month} ${day} ${year} · ${clock}`;
+});
+</script>
+</body>
+
+</html>
