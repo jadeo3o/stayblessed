@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background: #aaaaaa;
+    color: black;
+    font-family: system-ui, sans-serif;
+}
+
+header {
+    padding: 30px 20px 0;
+    text-align: center;
+}
+
+nav {
+    font-size: 18px;
+}
+
+nav span {
+    opacity: 1;
+}
+
+main,
+footer {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+main {
+    padding: 40px 40px;
+    line-height: 1.5;
+}
+
+footer {
+    padding: 0 40px;
+    line-height: 1;
+}
+
+a {
+    color: inherit;
+    opacity: .7;
+    text-decoration: none;
+    transition: opacity .2s ease;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 40px 16px;
+    }
+
+    footer {
+        padding: 0 16px;
+    }
+}
