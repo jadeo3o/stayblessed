@@ -126,6 +126,12 @@ time {
     margin-bottom: 0;
 }
 
+/* yellow hearts: prevent iOS landscape text blow-up */
+body.yellow-hearts {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
 /* blue butterflies */
 
 .blue-butterflies main {
